@@ -1,0 +1,23 @@
+<table class="table table-borderless" id="borders">
+    <thead class="thead-primary">
+      <tr>
+        <th scope="col">User Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">DOB</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of user | async">
+       
+        <th scope="row">{{ u.id }}</th>
+        <td>{{ u.name }}</td>
+        <td>{{ u.email }}</td>
+        
+        <td>{{ u.dob }}</td>
+        <td>{{ u.phoneNo }}</td>
+      </tr>
+     
+    </tbody>
+  </table>
